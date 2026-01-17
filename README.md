@@ -329,7 +329,7 @@ It is also important to note (as mentioned in the application overview and funct
 ![](./images/Furniture%20Export%20Warehouse.drawio.png)
 
 ## UML ARCHITECTURAL DIAGRAM
-![](./images/Final%20Architectural%20Diagram-CLASS%20DIAGRAM%20-%20Main.drawio.png)
+![](./images/UML%20ARCHITECTURAL%20DIAGRAM.drawio%20(1).png)
 
 
 

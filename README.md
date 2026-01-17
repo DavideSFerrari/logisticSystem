@@ -281,7 +281,7 @@ It is also important to note (as mentioned in the application overview and funct
 
 
 
-### UML CLASS DIAGRAMS
+## UML CLASS DIAGRAMS
 ![](./images/Menu.drawio.png)
 
 **Terminal Operator**
@@ -328,5 +328,31 @@ It is also important to note (as mentioned in the application overview and funct
 ![](./images/Furniture%20Import%20Warehouse.drawio.png)
 ![](./images/Furniture%20Export%20Warehouse.drawio.png)
 
-### UML ARCHITECTURE DIAGRAM
+## UML ARCHITECTURAL DIAGRAM
 ![](./images/Final%20Architectural%20Diagram-CLASS%20DIAGRAM%20-%20Main.drawio.png)
+
+
+
+
+
+## Known Limitations and Future Work
+### **Known Limitations**
+While this project successfully models the core logic of a maritime logistics loop, certain real-world complexities were abstracted or simplified due to the scope of the simulation.
+1. Simulation Scope & Actors
+* Single Vessel Model: The current system operates with a single cargo ship on a fixed loop (Bari ↔ Busan). Real-world logistics involve multiple fleets, distinct shipping companies, and dynamic scheduling that changes based on external factors (weather, malfunctions, geopolitical events).
+* Centralized Operator: The Terminal Operator currently manages both ports from a single menu. A more realistic approach would be decentralized, with distinct operators for Bari and Busan, each managing their own jurisdiction.
+* Direct Routes Only: The system assumes a direct link between ports. It does not account for Transhipments, where cargo is offloaded at an intermediate hub and transferred to a different vessel to reach its final destination.
+2. Logistics & Infrastructure
+Congestion & Queues: The simulation assumes immediate access to resources. It does not model Port Congestion (e.g., truck queues at the gate) or delays caused by simultaneous ship arrivals.
+* Inventory Fluctuations: In reality, terminal inventory fluctuates unpredictably, and terminals often run out of specific container types, requiring transfers from other depots. The current model relies on a more static "Safety Buffer" logic.
+* Bureaucracy: The system focuses on physical movement. It excludes Customs Operations, declarations, and the complex documentation required for international import/export.
+
+### **Future Work**
+Given more time and resources, the following improvements would elevate the project from a simulation to a more robust software solution.
+1. Technical Architecture
+* Database Integration: Currently, data is held in memory (Java Collections). Implementing SQL or NoSQL persistence would allow the state of terminals and ships to survive application restarts.
+* Observer Pattern: To reduce the need for "Polling" (checking status loops), the Observer Pattern could be implemented. This would allow the Terminal to automatically notify the Operator when a ship arrives, or notify the Warehouse Truck immediately when capacity thresholds are breached.
+2. Functional Enhancements
+* Advanced Filtering: The iteration logic could be expanded to support detailed filtering. This feature was descoped due to time constraints but would allow operators to search containers by specific criteria (e.g., "Show all High Cubes containing Electronics in Bari").
+* Enhanced Factory Logic: The relationship between Containers and Goods could be deepened using a more complex Abstract Factory approach, linking specific container structures (Refrigerated, Open Top) to specific goods types (Food, Oversized Cargo) during creation.
+* Multi-Ship Concurrency: Upgrading the CargoShip actor to run on its own thread would allow multiple ships to operate simultaneously, requiring more complex synchronization at the docking ports.

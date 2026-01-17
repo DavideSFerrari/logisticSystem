@@ -281,4 +281,52 @@ It is also important to note (as mentioned in the application overview and funct
 
 
 
-###
+### UML CLASS DIAGRAMS
+![](./images/Menu.drawio.png)
+
+**Terminal Operator**
+* Factory
+![](./images/Box.drawio.png)
+![](./images/HighCube.png)
+![](./images/BoxSelector.drawio.png)
+![](./images/HighCubeSelector.drawio.png)
+![](./images/Container.png)
+![](./images/ContainerCreator.drawio.png)
+* Iterator
+![](./images/ContainerCollection.drawio.png)
+![](./images/ContainerIterator.drawio.png)
+![](./images/TerminalContainerIterator.drawio.png)
+* Singleton
+![](./images/ContainerRegister.drawio.png)
+* Composite
+![](./images/Terminal.drawio.png)
+![](./images/ImportSubTerminal.drawio.png)
+![](./images/ExportSubTerminal.png)
+![](./images/TerminalComponent.drawio.png)
+
+**Cargo Ship Captain**
+![](./images/CargoShipCaptainMenu.png)
+![](./images/CargoShip.drawio.png)
+
+**Warehouse Manager**
+![](./images/Warehouse%20Manager%20Menu.png)
+![](./images/WarehouseTruck.drawio.png)
+* Abstract Factory
+![](./images/Warehouse.drawio.png)
+![](./images/Import%20Warehouse.drawio.png)
+![](./images/Export%20Warehouse.drawio.png)
+![](./images/Food%20Warehouse.drawio.png)
+![](./images/Food%20Import%20Warehouse.drawio.png)
+![](./images/Food%20Export%20Warehouse.drawio.png)
+![](./images/Clothing%20Import%20Warehouse.drawio.png)
+![](./images/Clothing%20Import%20Warehouse.drawio.png)
+![](./images/ClothingExportWarehouse.drawio.png)
+![](./images/Electronics%20Warehouse.drawio.png)
+![](./images/Electronics%20Import%20Warehouse.drawio.png)
+![](./images/Electronics%20Export%20Warehouse.drawio.png)
+![](./images/Furniture%20Warehouse.drawio.png)
+![](./images/Furniture%20Import%20Warehouse.drawio.png)
+![](./images/Furniture%20Export%20Warehouse.drawio.png)
+
+### UML ARCHITECTURE DIAGRAM
+![](./images/Final%20Architectural%20Diagram-CLASS%20DIAGRAM%20-%20Main.drawio.png)

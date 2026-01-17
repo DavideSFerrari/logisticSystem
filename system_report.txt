@@ -1,0 +1,69 @@
+
+==========================================================================================
+                    SYSTEM ARCHITECTURE & CONFIGURATION REPORT
+==========================================================================================
+[AUTHOR]    Menu                           | Davide Stefano Ferrari | Student
+------------------------------------------------------------------------------------------
+[PATTERN]   ContainerRegister              | Singleton            | Ensures a single global register
+[CONFIG]    ContainerRegister              | LIMIT: 20            | Value injected via Reflection
+------------------------------------------------------------------------------------------
+[CONFIG]    CargoShip                      | LIMIT: 10            | Value injected via Reflection
+------------------------------------------------------------------------------------------
+[PATTERN]   Terminal                       | Composite            | Composite
+------------------------------------------------------------------------------------------
+[PATTERN]   ImportSubTerminal              | Iterator - Composite | Concrete Aggregate - Composite
+[CONFIG]    ImportSubTerminal              | LIMIT: 15            | Value injected via Reflection
+------------------------------------------------------------------------------------------
+[PATTERN]   ExportSubTerminal              | Iterator - Composite | Concrete Aggregate - Composite
+[CONFIG]    ExportSubTerminal              | LIMIT: 10            | Value injected via Reflection
+------------------------------------------------------------------------------------------
+[PATTERN]   Container                      | Factory              | Product
+------------------------------------------------------------------------------------------
+[PATTERN]   Box                            | Factory              | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   HighCube                       | Factory              | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   ContainerCreator               | Factory              | Creator
+------------------------------------------------------------------------------------------
+[PATTERN]   BoxSelector                    | Factory              | Concrete Creator
+------------------------------------------------------------------------------------------
+[PATTERN]   HighCubeSelector               | Factory              | Concrete Creator
+------------------------------------------------------------------------------------------
+[PATTERN]   ContainerCollection            | Iterator             | Aggregate
+------------------------------------------------------------------------------------------
+[PATTERN]   ContainerIterator              | Iterator             | Iterator Interface
+------------------------------------------------------------------------------------------
+[PATTERN]   TerminalContainerIterator      | Iterator             | Concrete Iterator
+------------------------------------------------------------------------------------------
+[PATTERN]   Warehouse                      | Abstract Factory     | Abstract Factory
+------------------------------------------------------------------------------------------
+[PATTERN]   ImportWarehouse                | Abstract Factory     | Abstract Product
+------------------------------------------------------------------------------------------
+[PATTERN]   ExportWarehouse                | Abstract Factory     | Abstract Product
+------------------------------------------------------------------------------------------
+[PATTERN]   ClothingWarehouse              | Abstract Factory     | Concrete Factory
+------------------------------------------------------------------------------------------
+[PATTERN]   ClothingImportWarehouse        | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   ClothingExportWarehouse        | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   FoodWarehouse                  | Abstract Factory     | Concrete Factory
+------------------------------------------------------------------------------------------
+[PATTERN]   FoodImportWarehouse            | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   FoodExportWarehouse            | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   ElectronicsWarehouse           | Abstract Factory     | Concrete Factory
+------------------------------------------------------------------------------------------
+[PATTERN]   ElectronicsImportWarehouse     | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   ElectronicsExportWarehouse     | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   FurnitureWarehouse             | Abstract Factory     | Concrete Factory
+------------------------------------------------------------------------------------------
+[PATTERN]   FurnitureImportWarehouse       | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+[PATTERN]   FurnitureExportWarehouse       | Abstract Factory     | Concrete Product
+------------------------------------------------------------------------------------------
+================================== END OF REPORT =========================================
+

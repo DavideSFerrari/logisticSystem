@@ -38,7 +38,7 @@ public class CargoShipCaptainMenu
         {
             try
             {                    
-                logger.info("\nYou are the cargo ship captain. Select one of the following operations: \n 1. Cargo Ship State. \n 2. Port Docking. \n 3. Operations. \n 4. Display containers. \n 5. Leave the port. \n 6. Exit. \nProvide an answer with the number related to the desired option: ");
+                logger.info("\nYou are the cargo ship captain. Select one of the following operations: \n 1. Cargo Ship State. \n 2. Port Docking. \n 3. Operations. \n 4. Display Containers. \n 5. Leave the Port. \n 6. Exit. \nProvide an answer with the number related to the desired option: ");
                 String decision = option.nextLine();
                 switch (decision)
                 {
@@ -278,7 +278,7 @@ public class CargoShipCaptainMenu
      */
     public static boolean undocking(Scanner option, CargoShip ship, ImportSubTerminal busanImp, ImportSubTerminal bariImp, ExportSubTerminal busanExp, ExportSubTerminal bariExp) throws MenuValidationException
     {
-        logger.info("You decided to leave port. What actions do you intend to take?\n 1. Request Undocking. \n 2. Ask for Confirmation From the Terminal. \n 3. Exit.\n Provide an answer with the number related to the desired option: ");
+        logger.info("You decided to leave port. What actions do you intend to take?\n 1. Request Undocking. \n 2. Ask for Confirmation. \n 3. Exit.\n Provide an answer with the number related to the desired option: ");
         String displayOptions = option.nextLine();
         System.out.println("-");
         switch (displayOptions)

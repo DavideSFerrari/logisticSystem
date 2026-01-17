@@ -39,7 +39,7 @@
 ------------------------------------------------------------------------------------------
 [PATTERN]   ImportWarehouse                | Abstract Factory     | Abstract Product
 ------------------------------------------------------------------------------------------
-[PATTERN]   ExportWarehouse                | Abstract Factory     | Abstract Product
+[PATTERN]   ExportWarehouse                | Abstract Factory - Template Method | Abstract Product - Template Method
 ------------------------------------------------------------------------------------------
 [PATTERN]   ClothingWarehouse              | Abstract Factory     | Concrete Factory
 ------------------------------------------------------------------------------------------
